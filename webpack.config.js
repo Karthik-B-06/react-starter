@@ -15,7 +15,8 @@ module.exports = {
   // webpack-dev-server provides you with a simple web server 
   devServer: {
     contentBase: path.join(__dirname, 'public'),
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   resolve: {
     extensions: [ '.js', '.jsx']
